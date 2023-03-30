@@ -1,20 +1,19 @@
 import "./RateCard.css";
 
-// const stylesArr = Object.entries(styles);
-// console.log(stylesArr);
-
 import cN from "classnames";
 
-// "cards-item " + (isSelected ? "selected" : "");
-
 export default function RateCard(props) {
-  let { rate, price, speed, isSelected, color } = props;
+  let { rate, price, speed, color, id, isSelected, onButtonClick } = props;
+
   let classSelect = "";
   if (isSelected) classSelect = "selected";
-  return (
-    // for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
 
+  function onClick() {
+    onButtonClick(id);
+  }
+
+  console.log(isSelected);
+  return (
     <div className="cards__column">
       <article className={cN([`cards-item ` + `${classSelect} ` + `${color}`])}>
         <div className="cards-item__body">
@@ -30,6 +29,11 @@ export default function RateCard(props) {
             <span>Объем включенного</span>
             <span>трафика не ограничен</span>
           </div>
+          {!isSelected && (
+            <button className="cards__button" onClick={onClick}>
+              Выбрать
+            </button>
+          )}
         </div>
       </article>
     </div>

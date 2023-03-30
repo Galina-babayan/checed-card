@@ -4,7 +4,7 @@ const Json = `[
         "price": "300",
         "speed": "до 10 Мбит/сек",
         "color": "first",
-        "id": "01"
+        "id": "1"
            
     },
     {
@@ -12,7 +12,8 @@ const Json = `[
         "price": "450",
         "speed": "до 50 Мбит/сек",
         "color": "second",
-        "id": "02"
+        "id": "2"
+      
            
     },
     {
@@ -20,8 +21,8 @@ const Json = `[
         "price": "550",
         "speed": "до 100 Мбит/сек",
         "color": "therd",
-        "id": "03",
-        "isSelected": "true"
+        "id": "3"
+        
            
     },
     {
@@ -29,7 +30,7 @@ const Json = `[
         "price": "1000",
         "speed": "до 200 Мбит/сек",
         "color": "fourth",
-        "id": "04"
+        "id": "4"
            
     }
 ]`;

@@ -68,6 +68,32 @@ body._lock {
   margin: 15px;
   min-height: 700px;
 }
+.cards__button {
+  border-radius: 37px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  padding: 2px 15px;
+  height: 30px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 105%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(105, 74, 59);
+  border: 0.1px solid rgb(105, 74, 59);
+  max-width: 100px;
+  background-color: beige;
+  cursor: pointer;
+}
+.cards__button:hover {
+  background: rgb(154, 114, 86);
+  color: rgb(229, 220, 210);
+}
 
 .main__title {
   display: flex;
@@ -86,12 +112,6 @@ body._lock {
   padding-right: 15px;
   min-height: 100%;
   margin-bottom: 20px;
-}
-
-.cards-item:hover {
-  box-shadow: 5px 5px 5px #425b69;
-  transition: all 0.3s ease 0s;
-  outline: solid 4px #f08700;
 }
 
 .first {
@@ -113,6 +133,9 @@ body._lock {
 .selected {
   transform: scale(1.05, 1.05);
   border: 3px solid #425b69;
+  box-shadow: 5px 5px 5px #425b69;
+  transition: all 0.3s ease 0s;
+  outline: solid 4px #f08700;
 }
 
 .cards-item {
